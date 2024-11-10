@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>A script tag with a src attribute is created and placed in the document.</p>
+<p>The PHP file returns a call to a function with an object as a parameter.</p>
+<p id="demo"></p>
+
+<p>Try changing the table property from "customers" to "products".</p>
+
+<script>
+const obj = { table: "customers", limit: 10 };
+let s = document.createElement("script");
+s.src = "jsonp_demo_db.php?x=" + JSON.stringify(obj);
+document.body.appendChild(s);
+
+function myFunc(myObj) {
+  let txt = "";
+  for (let x in myObj) {
+    txt += myObj[x].name + "<br>";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>

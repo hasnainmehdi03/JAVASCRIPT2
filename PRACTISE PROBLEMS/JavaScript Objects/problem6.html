@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Objects</h1>
+<p>There are two ways to access a property: object.property or object["property"]</p>
+
+<p id="demo"></p>
+
+<script>
+// Create an Object:
+const person = {
+  firstName: "John",
+  lastName : "Doe",
+  id     :  5566
+};
+
+// Display lastName from the Object:
+document.getElementById("demo").innerHTML =
+"The last name is " +  person["lastName"];
+</script>
+
+</body>
+</html>

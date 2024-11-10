@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function openWin() {
+  var myWindow = window.open("", "", "width=400, height=200");
+  myWindow.opener.document.getElementById("demo").innerHTML = 
+  "A new window has been opened.";
+}
+</script>
+</head>
+<body>
+
+<button onclick="openWin()">Open myWindow</button>
+
+<p id="demo"></p>
+
+</body>
+</html>

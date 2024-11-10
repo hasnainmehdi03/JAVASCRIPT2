@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+  let w = window.outerWidth;
+  let h = window.outerHeight;
+  let txt = "Window size: width=" + w + ", height=" + h;
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+</head>
+
+<body onresize="myFunction()">
+<h1>JavaScript HTML Events</h1>
+<h2>The onresize Attribute</h2>
+
+<p>Try to resize the browser window.</p>
+
+<p id="demo"> </p>
+
+<p>Note: this example will not work properly in IE8 and earlier. IE8 and earlier do not support the outerWidth/outerHeight propery of the window object.</p>
+
+</body>
+
+</html>

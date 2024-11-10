@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Dates</h1>
+<h2>The getDay() Method</h2>
+<p>Return the weekday as a number.</p>
+<p>You can use an array of names to return the weekday as a name:</p>
+
+<p id="demo"></p>
+
+<script>
+const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+const d = new Date();
+let day = days[d.getDay()];
+document.getElementById("demo").innerHTML = day;
+</script>
+
+</body>
+</html>

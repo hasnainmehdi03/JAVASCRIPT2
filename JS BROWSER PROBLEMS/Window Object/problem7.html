@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var myWindow;
+function openWin() {
+  myWindow=window.open("", "", "width=400, height=200");
+}
+function moveWin() {
+  myWindow.moveBy(250, 250)
+}
+</script>
+</head>
+<body>
+
+<input type="button" value="Open myWindow" onclick="openWin()" />
+<br><br>
+<input type="button" value="Move myWindow" onclick="moveWin()" />
+
+</body>
+</html>

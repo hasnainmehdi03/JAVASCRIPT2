@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<iframe id="myframe" src="/default.asp"></iframe>
+
+<p>Click the button to display the value of the src attribute in the iframe.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let x = document.getElementById("myframe").src;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function whichElement(e) {
+  let targ, tname, e;
+  if (!e) {
+    e = window.event;
+  }
+  if (e.target) {
+    targ=e.target;
+  } else if (e.srcElement) {
+    targ=e.srcElement;
+  }
+  tname = targ.tagName;
+  alert("You clicked on a " + tname + " element.");
+}
+</script>
+</head>
+<body onmousedown="whichElement(event)">
+<h1>JavaScript HTML Events</h1>
+<h2>The onmousedown Attribute</h2>
+
+<p>Click somewhere in the document. An alert box will alert the name of the element you clicked on.</p>
+<h3>This is a heading</h3>
+<img border="0" src="smiley.gif" alt="Smiley" width="32" height="32">
+<p>This is a paragraph.</p>
+
+</body>
+</html>

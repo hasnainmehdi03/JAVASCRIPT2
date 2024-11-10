@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function color(color) {
+  document.forms[0].myInput.style.background = color;
+}
+</script>
+</head>
+<body>
+<h1>JavaScript HTML Events</h1>
+<h2>The onkeydown and onkeyup Attributes</h2>
+
+<form>
+Write a message:<br>
+<input 
+type="text" 
+onkeydown="color('yellow')"
+onkeyup="color('white')"
+name="myInput">
+</form>
+
+</body>
+</html>

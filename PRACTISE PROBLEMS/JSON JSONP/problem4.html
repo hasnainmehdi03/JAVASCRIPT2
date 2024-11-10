@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Request With a Callback Function</h2>
+<p>The PHP file returns a call to the function you send as a callback.</p>
+<p id="demo"></p>
+
+<script>
+let s = document.createElement("script");
+s.src = "demo_jsonp2.php?callback=myDisplayFunction";
+document.body.appendChild(s);
+
+function myDisplayFunction(myObj) {
+  document.getElementById("demo").innerHTML = myObj.name;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Delete JavaScript Object Properties</h2>
+
+<p id="demo"></p>
+
+<script>
+let x = "";
+let myObj = {
+  "name":"John",
+  "age":30,
+  "cars": {
+  "car1":"Ford",
+  "car2":"BMW",
+  "car3":"Fiat"
+  }
+}
+delete myObj.cars.car2;
+
+for (let i in myObj.cars) {
+  x += myObj.cars[i] + "<br>";
+}
+
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>

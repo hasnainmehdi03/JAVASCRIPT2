@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onClick="setInterval(myCounter, 1000)">Start counter!</button>
+
+<p id="demo">Click on the button above and I will count forever.</p>
+
+<script>
+var c = 0;
+function myCounter() {
+  document.getElementById("demo").innerHTML = ++c;
+}
+</script> 
+
+</body>
+</html>

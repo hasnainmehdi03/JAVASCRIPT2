@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<base id="htmldom" target="_self" href="https://www.w3schools.com/jsref/">
+</head>
+<body>
+
+<p>Click the button to display the value of the target attribute of the base element.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("htmldom").target;
+  document.getElementById("demo").innerHTML = "Base target for all links: " + x;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function openWin() {
+  window.open("https://www.w3schools.com");
+}
+</script>
+</head>
+<body>
+
+<form>
+  <input type="button" value="Open Window" onclick="openWin()">
+</form>
+
+</body>
+</html>
